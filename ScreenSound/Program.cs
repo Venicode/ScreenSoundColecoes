@@ -1,12 +1,22 @@
-﻿Musica musicas = new Musica();
-musicas.nome = "Roxane";
-musicas.artista = "The Police";
+﻿Album albumTheStrokes = new()
+{
+    Nome = "Room On Fire",
+    Genero = "Indie Rock"
+}; 
 
-Console.WriteLine(musicas.nome);
-Console.WriteLine(musicas.artista);
+Musica musica1 = new();
+musica1.Nome = "Reptilia";
+musica1.Duracao = 213;
 
-Musica musicas2 = new Musica();
-musicas2.nome = "Vertigo";
-musicas2.artista = "U2";
-Console.WriteLine(musicas2.nome);
-Console.WriteLine(musicas2.artista);
+Musica musica2 = new();
+musica2.Nome = "Under Control";
+musica2.Duracao = 230;
+
+albumTheStrokes.AdicionarMusica(musica1);
+albumTheStrokes.AdicionarMusica(musica2);
+
+Banda theStrokes = new();
+theStrokes.Nome = "The Strokes";
+theStrokes.AdicionarAlbum(albumTheStrokes);
+theStrokes.ExibirDiscografia();
+albumTheStrokes.ExibirMusicasAlbum();
