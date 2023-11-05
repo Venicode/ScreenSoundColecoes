@@ -4,7 +4,7 @@ class Musica {
     //propriedade com get e set (leitura e escrita)
     public string Nome { get; set; }
     public string Artista { get; set; }
-    public int Duracao { get; set; }
+    public double Duracao { get; set; }
     public bool Disponivel { get; set; }
     //Propriedade somente leitura (get) usando o lambda
     public string DescricaoResumida =>
