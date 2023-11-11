@@ -1,22 +1,27 @@
-﻿Album albumTheStrokes = new()
+Banda theStrokes = new("The Strokes");
+
+Album albumTheStrokes = new("Room On Fire");
+
+Musica musica1 = new(theStrokes, "Reptilia")
 {
-    Nome = "Room On Fire",
-    Genero = "Indie Rock"
-}; 
+    //inicializando propriedades não obrigatórias
+    Duracao = 213,
+    Disponivel = true
+};
 
-Musica musica1 = new();
-musica1.Nome = "Reptilia";
-musica1.Duracao = 213;
+Musica musica2 = new(theStrokes, "Under Control")
+{
+    Duracao = 230,
+    Disponivel = false
+};
 
-Musica musica2 = new();
-musica2.Nome = "Under Control";
-musica2.Duracao = 230;
 
 albumTheStrokes.AdicionarMusica(musica1);
 albumTheStrokes.AdicionarMusica(musica2);
 
-Banda theStrokes = new();
-theStrokes.Nome = "The Strokes";
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
+
 theStrokes.AdicionarAlbum(albumTheStrokes);
-theStrokes.ExibirDiscografia();
 albumTheStrokes.ExibirMusicasAlbum();
+theStrokes.ExibirDiscografia();
