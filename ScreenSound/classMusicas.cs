@@ -2,8 +2,11 @@
 class Musica
 {
     //Anteriormente atributos, agora estamos usando
-    //propriedade com get e set (leitura e escrita)
-
+    //propriedade com get e set (leitura e escrita):
+    //Com atributos voce altera ou consome o valor de uma variavel 
+    //diretamente acessando a propria variavel, ja com propriedades voce precisa 
+    //passar por validacoes para chegar ate sua variavel.
+    
     //Construtor:
     public Musica(Banda artista, string nome)
     {
